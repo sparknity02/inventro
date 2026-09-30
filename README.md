@@ -1,6 +1,6 @@
 # Inventro — Sparknity Inventory Management System
 
-A clean, modern, and minimal internship-quality full-stack Inventory Management System built with **Java 25**, **Spring Boot**, **MySQL**, **Spring Cloud Netflix Eureka**, and **React + Vite**.
+A modern, production-ready full-stack Inventory Management System built with **Java 25**, **Spring Boot**, **MySQL**, **Spring Cloud Netflix Eureka**, and **React + Vite**.
 
 ---
 
@@ -69,7 +69,7 @@ A clean, modern, and minimal internship-quality full-stack Inventory Management 
 - **Item-Supplier Relationship:** 1-to-N mapping cleanly linked via foreign keys and DTO responses.
 - **Search & Category Filtering:** Instant search by name and filtering by category.
 - **Low-Stock Detection:** Real-time query for items with stock below a configurable threshold (default < 10 units), highlighted with visual alerts.
-- **Summary Dashboard:** High-level metrics for Total Items, Total Suppliers, Low-Stock Count, and Total Inventory Valuation ($\sum \text{quantity} \times \text{price}$).
+- **Summary Dashboard:** High-level metrics for Total Items, Total Suppliers, Low-Stock Count, and Total Inventory Valuation (sum of quantity × price).
 - **Validation:** Jakarta Validation (`@NotBlank`, `@Min`, `@Positive`, `@Email`) with structured 400 Bad Request error feedback.
 - **Centralized Exception Handling:** `@RestControllerAdvice` delivering clean JSON errors without stack traces.
 - **Service Discovery:** Automatic registration with Spring Cloud Netflix Eureka Server.
@@ -161,7 +161,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ---
 
-## 8. Demonstration Workflow
+## 8. Application Walkthrough & Features
 
 1. Open the **Dashboard** at `http://localhost:5173/` to see initial metrics and low-stock warnings.
 2. Navigate to **Suppliers** (`/suppliers`) to view, add, or edit vendors.
