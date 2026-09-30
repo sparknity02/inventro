@@ -22,43 +22,7 @@ A modern, production-ready full-stack Inventory Management System built with **J
 
 ## 3. Architecture
 
-```text
-                 ┌─────────────────────────────────┐
-                 │          React + Vite           │
-                 │         Frontend (:5173)        │
-                 │                                 │
-                 │  Dashboard │ Items │ Suppliers  │
-                 │          Low Stock              │
-                 └────────────────┬────────────────┘
-                                  │
-                             REST / JSON
-                                  │
-                                  ▼
-                 ┌─────────────────────────────────┐
-                 │       Spring Boot Backend       │
-                 │     inventory-service (:8080)   │
-                 │                                 │
-                 │  Controller │ Service │ DTO     │
-                 │  Repository │ Exception Handler │
-                 └────────────────┬────────────────┘
-                                  │
-                            JPA / Hibernate
-                                  │
-                                  ▼
-                        ┌──────────────────┐
-                        │      MySQL       │
-                        │ inventory_db     │
-                        │     (:3306)      │
-                        └──────────────────┘
-
-                                  ▲
-                                  │ Service Discovery
-                                  │
-                        ┌──────────────────┐
-                        │  Eureka Server   │
-                        │     (:8761)      │
-                        └──────────────────┘
-```
+![Inventro Architecture Diagram](docs/architecture-diagram.png)
 
 ---
 
