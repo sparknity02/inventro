@@ -169,7 +169,7 @@ graph TD
 
 ---
 
-## 5. Ready-to-Use Prompt (For Image Generators)
+## 5. Visual Layout & Diagram Description
 
 ```text
 A clean, professional modern software architecture diagram for "Inventro - Sparknity Inventory Management System".
